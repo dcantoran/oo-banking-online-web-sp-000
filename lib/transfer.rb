@@ -15,10 +15,11 @@ class Transfer
   end 
   
   def execute_transaction
-    until status == "complete"
+    1.times do 
       sender.balance -= amount
       receiver.balance += amount
       @status = "complete"
+      break
     end 
     if @sender.balance < @amount || !self.valid?
       "Transaction rejected. Please check your account balance."
