@@ -24,7 +24,9 @@ class Transfer
   end 
   
   def reverse_transfer
-    
+    if self.execute_transaction
+      
+    end 
   end 
   
 end
