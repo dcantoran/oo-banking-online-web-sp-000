@@ -22,6 +22,7 @@ class Transfer
     end 
     if !valid?
       "Transaction rejected. Please check your account balance."
+    end 
   end 
   
 end
