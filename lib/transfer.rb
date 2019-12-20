@@ -9,9 +9,7 @@ class Transfer
   end 
   
   def valid? 
-    # sender.balance > @amount && receiver.status == "open"
     sender.valid? && receiver.valid?
-    # binding.pry
   end 
   
   def execute_transaction
