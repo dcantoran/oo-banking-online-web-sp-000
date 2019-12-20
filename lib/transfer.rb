@@ -15,10 +15,11 @@ class Transfer
   end 
   
   def execute_transaction
-      sender.balance -= amount
-      receiver.balance += amount
-      @status = "complete"
-    
+    1.times do 
+    sender.balance -= amount
+    receiver.balance += amount
+    @status = "complete"
+    end 
   end 
   
 end
