@@ -9,7 +9,7 @@ class Transfer
   end 
   
   def valid? 
-    sender.balance > @amount && receiver.status
+    sender.balance > @amount && receiver.status == "open"
     binding.pry
   end 
   
