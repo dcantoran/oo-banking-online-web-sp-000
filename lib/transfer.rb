@@ -24,7 +24,7 @@ class Transfer
   end 
   
   def reverse_transfer
-    self.execute_transaction.reverse
+    receiver.execute_transaction
   end 
   
 end
