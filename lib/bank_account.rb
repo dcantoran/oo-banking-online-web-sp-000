@@ -7,4 +7,8 @@ class BankAccount
     @status = "open"
   end 
   
+  def deposit(amount)
+    
+  end 
+  
 end
