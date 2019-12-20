@@ -9,6 +9,7 @@ class Transfer
   end 
   
   def valid? 
+    sender.balance > @amount && receiver.status
     binding.pry
   end 
   
